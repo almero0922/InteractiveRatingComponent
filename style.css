@@ -17,12 +17,15 @@ body{
     justify-content: center;
     align-items: center;
 }
+.inactive{
+    display: none;
+}
 main{
     width: 19rem;
     height: 20rem;
     background-image: linear-gradient(to bottom, #252d37, #20272f, #1c2027, #171a1f, #121417);
     border-radius: 15px;
-    padding: 28px;
+    padding: 30px 20px 30px 20px;
 }
 .logo{
     background-image: url("./images/icon-star.svg");
@@ -59,6 +62,11 @@ main p{
     display: flex;
     justify-content: space-between;
 }
+.rating button:hover{
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
 .submit-ca{
     border: none;
     width: 90%;
@@ -70,3 +78,31 @@ main p{
     text-align: center;
     color: var(--white);
 }
+.submit-ca:hover{
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
+.content-thankyou{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.content-thankyou img{
+    width: 160px;
+    margin-bottom: 18px;
+}
+.content-thankyou .selection-text{
+    color: var(--orange);
+    background-color: var(--darkBlue);
+    font-size: 15px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-align: center;
+}
+.content-thankyou p{
+    text-align: center;
+    line-height: 1.5;
+}
+
